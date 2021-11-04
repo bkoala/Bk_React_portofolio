@@ -1,0 +1,322 @@
+/* GENERAL STYLES */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #e6e6fa;
+}
+
+article{
+  margin-left: 20px;
+  width: 90%;
+  display: inline-block;
+  padding-top: 20px;
+}
+header  nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 30px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+  border-bottom: 2px solid currentColor;
+}
+header nav ul li a {
+  padding: 5px;
+}
+
+/* Text styles for page  */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+  padding-bottom: 10px;
+  font-family:Helvetica, Arial,sans-serif;
+}
+/* Style for Main background image */
+.hero {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  background-image: url("images/image4.jpg"); 
+  background-size: cover;
+  background-position: center;
+}
+.hero:hover{
+  background-image: url("images/image3.jpg");
+}
+.hero img {
+width: 150px;
+border-radius: 100%;
+border: 2px solid #73AD21;
+height: 150px;
+margin-top: 50px;
+align-items: flex-start;
+}
+/* Absolute positioning */
+#relative-box {
+  position: relative;
+}
+
+#absolutep {
+  position: absolute;
+  top:175px;
+  right: 50px;
+  font-size: 30px;
+  padding:10px;
+  color:#ffffff;
+  background-color:lightblue;
+}
+
+/* Main page content */
+main {
+  width: 100%;
+  display: inline-block;
+}
+
+/* Main Grid sections  */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: auto;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.grid-item1{
+  font-size: 30px;
+  width: 250px;
+  padding-left: 30px;
+  height:auto;
+}
+.grid-item2{
+  font-size: 30px;
+  width: 1000px;
+  padding-left: 30px;
+  margin-right: 50px;
+  display: inline-block; 
+  height:auto;
+
+}
+.row {
+  display: flex;
+  margin:10px 20px; 
+  margin-bottom: 15px;
+}
+
+/* Create columns that sits next to each other */
+.column1 {
+  flex: auto;
+  height: auto; 
+  border: 5px solid lightblue;
+  position:relative;
+  height: 300px;
+}
+.column2{
+  margin-right: 5px;
+}
+.column3{
+  margin-left: 5px;
+}
+  /* Create two equal width columns that sits next to each other */
+.column2, .column3 {
+  flex: auto;
+  width: 50%; 
+  border: 5px solid lightblue;
+  position:relative;
+  height: 200px;
+}
+.row img{
+  width: 100%;
+  height: 100%;
+}
+/* CREATE ZOOM ON Hover over images */
+.column1  zoom {
+    padding: 30px;
+    background-color: green;
+    transition: transform .12s; /* Animation */
+    width: 150px;
+    height: 200px;
+    font-size: 20px;
+    margin: 10px auto;
+  }
+  .column2 .column3 zoom {
+    padding: 20px;
+    background-color: green;
+    transition: transform .11s; /* Animation */
+    width: 100px;
+    height: 175px;
+    margin: 10px auto;
+ 
+  }
+  .zoom:hover {
+    transform: scale(1.25); /* (125% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+/* End of zoom over image */
+/*Create style for absolute positioning of  Work sections */
+#absolutework {
+  position: absolute;
+  bottom:25px;
+  left: 0px;
+  font-size: 30px;
+  margin-top: 30px;
+  padding:10px;
+  color:#ffffff;
+  background-color:lightblue;
+}
+.p1{
+  float:right;
+  font-size: 40px;
+  border-right: 5px solid #2a607c;
+  padding-right:10px;
+  padding-left: 10px;
+  height: 100%;
+}
+.p2{
+    float:right;
+}
+.p3{
+  float:left;
+  font-size: 20px;
+}
+
+/* BEFORE Footer css  section */
+bfooter{
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+bfooter nav {
+  padding-top: 20px;
+  float: center;
+  font-size: 30px;
+  width: 100%;
+}
+
+bfooter nav ul {
+  list-style-type: none;
+}
+
+bfooter nav ul li {
+  display: inline-block;
+  margin-left: auto;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+bfooter nav ul li a {
+  padding-top: 30px;
+  padding:20px;
+  color: teal;
+  padding-bottom: 20px;
+}
+/* Footer css */
+footer {
+padding: 30px;
+clear: both;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+text-align: center;
+}
+
+footer h2 {
+font-size: 16px;
+}
+/* FOR SMALLER SCREENS */
+@media only screen and (max-width: 768px) {
+/* For mobile phones: */
+header  nav {
+ font-size: 20px; 
+ float: left;
+ margin: 5px;
+}
+.zoom:hover {
+  transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.grid-item1{
+  width: 100px;
+}
+.grid-item2{
+  width: 500px;
+}
+bfooter nav {
+  padding-top: 20px;
+  float:left;
+  font-size:15px;
+  width: 100%;
+}
+bfooter nav ul li a {
+padding:10px;}
+
+#absolutework {
+font-size: 20px;
+bottom:10px;
+}
+.p1{
+float:right;
+font-size: 20px;
+border-right: 5px solid #2a607c;
+padding-right:10px;
+padding-left: 10px;
+height: 100%;
+}
+.p3{
+float:left;
+font-size: 15px;
+}
+}
+/*Responsive for the page*/
+@media screen and (max-width: 576px) {
+/* For mobile phones: */
+header  nav {
+font-size: 14px; 
+float: left;
+margin: 2px;
+}
+.zoom:hover {
+ transform: scale(1.15); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.grid-item1{
+ width: 100px;
+}
+.grid-item2{
+ width: 400px;
+}
+bfooter nav {
+ padding-top: 20px;
+ float:left;
+ font-size:12px;
+ width: 100%;
+}
+bfooter nav ul li a {
+padding:5px;}
+
+#absolutework {
+font-size: 12px;
+bottom:5px;
+}
+.p1{
+float:right;
+font-size: 12px;
+border-right: 2px solid #2a607c;
+padding-right:5px;
+padding-left: 5px;
+height: 100%;
+}
+.p3{
+float:left;
+font-size: 12px;
+}
+ 
+}
