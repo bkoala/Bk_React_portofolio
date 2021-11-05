@@ -1,4 +1,4 @@
-{
+{ 
   "name": "bk_react_portofolio",
   "version": "0.1.0",
   "private": true,
@@ -17,6 +17,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  
   "eslintConfig": {
     "extends": [
       "react-app",

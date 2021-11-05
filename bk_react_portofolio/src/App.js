@@ -3,9 +3,9 @@ import React, {Fragment } from  'react';
 
 import { Navbar } from './components/Navbar';
 import { Sectionheader } from './components/Sectionheader';
-//import {Show} from './components/Show';
-//import { Social } from './components/Social';
-//import {Footer} from './components/Footer';
+import { Mainsection } from './components/Mainsection';
+import {Footer} from './components/Footer';
+
 
 
 function App() {
@@ -13,6 +13,8 @@ function App() {
     <Fragment>
      <Navbar />
      <Sectionheader />
+     <Mainsection />
+     <Footer />
     </Fragment>
   );
 }
