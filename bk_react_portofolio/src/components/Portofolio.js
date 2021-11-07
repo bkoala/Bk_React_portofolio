@@ -9,13 +9,11 @@ import Css1 from '../images/css1.png'
 export const Portofolio = () => {
     return (
         <div>
-          
-       <article id="portofiolo">
-         
+             
          <section class="grid-container">
          <div  class="grid-item">
                <div class="row">
-               <h1 class="p1" >Portofiolo </h1> 
+               <h1  >Portofiolo </h1> 
                </div>
             </div>
         </section>
@@ -65,7 +63,7 @@ export const Portofolio = () => {
              </div>
         </section>
 
-       </article>
+       
 </div>
     )
 }
