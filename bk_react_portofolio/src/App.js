@@ -18,8 +18,10 @@ class App extends Component {
     return ( <div>     
         <Router>
            <div>
-           <Navbar />         
+           <Navbar />   
+               
             <Routes>
+              <Route exact path="/Bk_React_portofolio" element={<About />} /> 
             <Route exact path="/" element={<About />}/>
             <Route exact path="/portofolio" element={<Portofolio />}/>
              <Route exact path="/contactme" element={<Contactme />}/>
