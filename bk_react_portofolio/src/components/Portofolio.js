@@ -9,11 +9,18 @@ import Css1 from '../images/css1.png'
 export const Portofolio = () => {
     return (
         <div>
-             <h1 class="p1" >Portofiolo </h1>
+          
        <article id="portofiolo">
-       
+         
+         <section class="grid-container">
+         <div  class="grid-item">
+               <div class="row">
+               <h1 class="p1" >Portofiolo </h1> 
+               </div>
+            </div>
+        </section>
          <section  class="grid-container">
-           <div  class="grid-item">
+            <div  class="grid-item">
            <div class="row">
                 <a href="https://bkoala.github.io/City_weather_dashbard/"> 
                 <img src={Weather} alt="City Weather Finder" /></a>     

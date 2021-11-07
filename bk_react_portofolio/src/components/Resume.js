@@ -3,11 +3,15 @@ import React from 'react'
 const Resume = () => {
     return (
         <div>
-         
+       <section class="grid-container">
+         <div  class="grid-item">
+               <div class="row">  
+               <h1>Resume</h1> 
+          </div>
+          </div>
+        </section>
         <section  class="grid-container">
-           <div  class="grid-item">
-          <div class="row">  <h1 class="p1">Resume</h1> </div>
-          <br/>
+           <div  class="grid-item"> 
           <div class="row">
           <h5>Summary </h5>
          </div>

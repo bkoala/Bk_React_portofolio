@@ -88,13 +88,17 @@ class Contactme extends React.Component {
   render() {
     return (
     <div >
-        <div>
- 
-        <h1 >Contact page</h1>
- 
-        </div>
-     <div id="register">   
-        <br/>
+      <section class="grid-container">
+         <div  class="grid-item">
+               <div class="row">
+                  <h1 >Contact page</h1>
+                 </div>
+          </div>
+        </section>
+       
+      <section class="grid-container">
+        <div  class="grid-item">
+         <div >
         <form method="post" className="form" name="userRegistrationForm"  onSubmit= {this.submituserRegistrationForm} >
         <p>Name</p>
         <input type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
@@ -108,6 +112,8 @@ class Contactme extends React.Component {
         <input type="submit" className="button"  value="Submit"/>
         </form>
     </div>
+    </div>
+    </section>
 </div>
 
       );
