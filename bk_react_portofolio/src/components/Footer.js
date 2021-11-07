@@ -5,7 +5,7 @@ export const Footer = () => {
         <div>
     <footer>
        <p>
-       Copyright &copy; 2019 Bertin Koala.
+       Copyright &copy; UW boot Camp 2021 Bertin Koala.
        </p>
     </footer>
         </div>
